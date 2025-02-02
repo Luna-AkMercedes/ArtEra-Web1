@@ -1,0 +1,349 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: .2s linear;
+}
+
+html,body{
+    height: 100%;   
+    width: 100%;
+}
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+#main{
+    height: 100%;
+    width: 100%;  
+}
+
+#header{
+    height: 10%;
+    width: 100%;
+    background-color: #ffffff; 
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    z-index: 1000;
+}
+
+#logo{
+    height: 90%;
+    width: 10%;
+    margin: 30px;
+}
+
+#logo img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #280a0a;
+    font-size:1.5em;
+}
+
+#contactdetails{
+    margin-left: 100px;
+    margin-right: 200px ;
+    font-size: 1.3em;
+    color: #280a0a;
+    font-weight:lighter;
+}
+
+.icon1{
+    margin-left: 50px;
+    font-size: 1.5em;
+    color: #280a0a;
+    background-color: rgb(255, 228, 228);
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.icon1:hover{
+    color: rgb(255, 228, 228);
+    background-color: #280a0a;
+}
+
+#login{
+    color: rgb(255, 228, 228);
+    background-color: #280a0a;
+    padding: 13px;
+    border-radius: 10px;
+    margin-left:auto;
+    margin-right: 30px;
+    font-size: 1.3em;
+    font-weight:lighter;
+    align-items: center;
+    display: flex;
+    justify-items: center;
+}
+
+#login:hover{
+    color: #160202;
+    background-color: rgb(130, 96, 96);
+}
+
+#try{
+    background-color: rgb(255, 228, 228);
+    color: #280a0a;
+    padding: 13px;
+    border-radius: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 1.3em;
+    font-weight:lighter;
+    color: #280a0a;
+}
+
+#try:hover{
+    color: rgb(255, 228, 228);
+    background-color: #280a0a;
+}
+
+
+#fakeheader{
+    height: 10vh;
+    width: 100%;
+    background-color: #ffffff; 
+}
+
+#page1{
+    height: 90vh;
+    width: 100%;
+    background-image: url('https://i.pinimg.com/736x/9e/9c/cd/9e9ccd9aee95c3904f139e235f77142f.jpg');
+    background-size: cover;
+    /*background-repeat: no-repeat;*/
+    background-position: center;
+}
+
+#strip{
+    height: 10%;
+    width: 100%;
+    color: #ffffff;
+    font-size:2.0em;
+    background-color: #3434348b;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#strip p{
+    margin:15px;
+}
+
+#content{
+    width: 100%;
+    height:75%;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+#box1{
+    height: 90%;
+    width: 47%;
+    background-color: #000000aa;
+    border-radius: 20px;
+    padding: 100px;
+    color:#ffffff
+}
+
+#box1 h1 {
+    font-size: 100px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+    margin:7px;
+    margin-left: 0px;
+}
+
+#box1 h2 {
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+    margin-top:10px;
+    margin-left: 0px;
+    margin-bottom: 18px;
+}
+
+#box1 p{
+    font-size: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    text-align: left;
+    margin:7px;
+    justify-content: space-around;
+}
+
+#box2{
+    height: 90%;
+    width: 47%;
+    background-color: #000000aa;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    padding:13px;
+}
+
+#heading{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(219, 219, 219, 0.732);
+    color:#280a0a;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    /*position:absolute;*/
+}
+/*.rounded-image {
+    
+    margin: 5px;
+    height:0px:
+    width:30%; /* Adjust the width as needed 
+    height:80%;
+}*/
+
+.image-container {
+    border-radius: 15px;
+    background-color: #8d8d8d;
+    margin: 10px;
+    width: 30%;
+    height: 90%;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+/*.image-text {
+    position: absolute;
+    bottom: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+}*/
+
+/*#page2{
+    height: 90vh;
+    width: 100%;
+    background-color: #ffc0ef;
+}*/
+
+
+
+@media (max-width:768px)
+{
+    html{
+        font-size: 55%;
+    }
+    #header{
+        flex-direction: column;
+        height: 20vh;
+    }
+    #logo{
+        margin: 10px;
+    }
+    .text1{
+        margin: 10px;
+        font-size: 1em;
+    }
+    #contactdetails{
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 1em;
+    }
+    .icon1{
+        margin-left: 10px;
+        font-size: 1em;
+    }
+    #login{
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 1em;
+    }
+    #try{
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 1em;
+    }
+    #fakeheader{
+        height: 10vh;
+    }
+    #page1{
+        height: 90vh;
+    }
+    #page2{
+        height: 90vh;
+    }
+    #box1, #box2 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #logo {
+        width: 20%;
+    }
+}
+
+@media (max-width: 480px) {
+    #logo {
+        width: 30%;
+    }
+
+    #box1 h1 {
+        font-size: 24px;
+    }
+
+    #box1 h2 {
+        font-size: 18px;
+    }
+}
+@media (max-width: 768px){
+    #header{
+        flex-direction: column;
+        height: auto;
+    }
+    nav ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    .products{
+        flex-direction: column;
+        align-items: center;
+    }
+    .product img{
+        width: 150px;
+        height: 150px;
+    }
+}
